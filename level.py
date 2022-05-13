@@ -54,7 +54,7 @@ class Level:
 ########## LEFT OFF HERE
     def vertical_movement_collision(self):
         player = self.player.sprite
-        player.rect.y += player.direction.y
+        player.rect.y +=
 
         for sprite in self.tiles.sprites():
             if sprite.rect.colliderect(player.rect):
